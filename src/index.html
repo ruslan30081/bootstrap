@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Vkontakte"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<ul class="nav flex-column fs-5">
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<i class="fa fa-user-o me-md-1" aria-hidden="true"></i> Моя страница
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<i class="fa fa-newspaper-o me-md-1" aria-hidden="true"></i> Новости
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<i class="fa fa-envelope-o me-md-1" aria-hidden="true"></i> Мессенджер
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<i class="fa fa-users me-md-1" aria-hidden="true"></i> Друзья
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 ">
+							<div class="profile-picture ">
+								<img src="@img/avatar.png" alt="Profile Picture">
+							</div>
+							<div class="stats fs-6 border-bottom border-start border-end border-dark">
+								<button class="btn btn-primary w-100 mb-4">Редактировать</button>
+								<p class=""><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+										Статистика</a></p>
+								<p><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Воспоминания</a></p>
+								<p><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Письма</a></p>
+							</div>
+						</div>   
+						<div style="height: max-content;" class="col-md-5  bg-white p-3 h-max-content">
+							<h2 class="fw-semibold fs-4">Руслан Абдуллин</h2>
+							<p>Веб-разработчик с опытом в создании сайтов. Люблю творить и решать сложные задачи. В
+								свободное время изучаю новые технологии и улучшаю свои навыки</p>
+							<hr>
+							<p>День рождения: 11.01.2002</p>
+							<p>Город: Москва</p>
+							<p>Семейное положение: Не женат</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
